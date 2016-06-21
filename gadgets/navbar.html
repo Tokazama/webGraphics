@@ -3,55 +3,57 @@
 <head>
 <style>
 
-.button {
-    border: none;
-    color: white;
-    padding: 10px 35px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-style: normal;
-    margin: 4px 0px;
-    cursor: pointer;
-    -webkit-transition-duration: 0.4s;
-    font-weight: bold;
-    transition-duration: 0.4s;
+#logo {
+  margin-left: auto
+  margin-right: auto
+  width: calc(100% - 100px)
+  top: 0; 
 }
 
-/*Home button*/
+.button {
+  border: none;
+  color: white;
+  padding: 10px 35px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-style: normal;
+  margin: 4px 0px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s;
+  font-weight: bold;
+  transition-duration: 0.4s;
+}
+
+/*nav buttons*/
 a.button {
-    background-color: #3d85c6;
+  color: white;
+  background-color: #3d85c6;
 }
 a.button:hover {
-    background-color: #0b5394;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-}
-
-/*Research button*/
-b.button {
-    background-color: #3d85c6;
-}
-b.button:hover {
-    background-color: #0b5394;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  color: white;
+  background-color: #0b5394;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 /*about button*/
 c.button {
-    background-color: #3d85c6;
-    border-radius: 1px 30px 30px 1px;
+  color: white;
+  background-color: #3d85c6;
+  border-radius: 1px 30px 30px 1px;
 }
 c.button:hover {
-    background-color: #0b5394;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  color: white;
+  background-color: #0b5394;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 </style>
 </head>
 <body>
 
-
+<img id="home" src="http://tokazama.github.io/webGraphics/graphics/logo.png"><br>
 <a href="https://iamzachandthisismyblog.blogspot.com/" class="button">HOME</a>
-<b href="https://iamzachandthisismyblog.blogspot.com/p/blog-page.html" class="button">RESEARCH</b>
+<a href="https://iamzachandthisismyblog.blogspot.com/p/blog-page.html" class="button">RESEARCH</a>
 <c href=#blank class="button">ABOUT</c>
 
 </body>
