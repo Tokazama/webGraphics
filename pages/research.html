@@ -2,27 +2,32 @@
 <html>
 <head>
 <style>
+/* all menus */
 .dropbtn {
-  background-color: rgba(255, 10, 10, 1);
   font-size: 1.25em;
   color: white;
   width: 8em 3em;
   padding: .5em 1em .25em 1em;
   border: none;
   cursor: pointer;
-  border-radius: 30em 30em 1em 1em;
   
 }
-
+/* border-radius: top-left top-right bottom-right bottom-left */
+.dropdown:hover .dropdown-content {
+  display: block;
+  border-radius: 30px 30px 1px 1px;
+}
 .dropdown {
   position: relative;
   display: inline-block;
-  border-radius: 1em 30em 30em 1em;
+  border-radius: 30px 30px 1px 1px;
   margin: 5px 5px
 
 }
 
 .dropdown-content {
+  border-top-style: solid;
+  border-bottom-style: solid;
   margin: 5px 5px
   font-style: normal;
   font-size: 1.20em;
@@ -33,9 +38,12 @@
 
 }
 
+.dropdown:hover .dropbtn {
+  background-color: rgba(255, 0, 0, 0.4);
+}
+
+/* specific menus */
 .dropdown-content a {
-  border-top-style: solid;
-  border-bottom-style: solid;
   padding: .25em .25em .25em .25em;
   color: white;
   text-decoration: none;
@@ -47,19 +55,28 @@
   background-color: rgba(255, 0, 0, 0.9);
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown-content b {
+  padding: .25em .25em .25em .25em;
+  color: white;
+  width: 12em;
+  text-decoration: none;
   display: block;
+  background-color: rgba(0, 102, 0, 0.6);
 }
 
-.dropdown:hover .dropbtn {
-  background-color: rgba(255, 0, 0, 0.4);
+.dropdown-content b:hover {
+  background-color: rgba(0, 102, 0, 0.9);
 }
+
+
+
 </style>
 </head>
 <body>
 
 <div class="dropdown">
-  <button class="dropbtn">T1 Preprocessing</button>
+  <button class="dropbtn" style="background-color: rgba(255, 0, 0, 1);
+          border-radius: 30px 30px 1px 1px;">T1 Preprocessing</button>
   <div class="dropdown-content">
     <a href="https://iamzachandthisismyblog.blogspot.com/2016/06/align-and-bias-correct-your-brain.html">Align and Bias Correct Your Brain</a>
     <a href="https://iamzachandthisismyblog.blogspot.com/2016/05/creating-sample-population-for-brain.html">Creating a Sample Population for a Brain Template</a>
@@ -67,8 +84,24 @@
     <a href="https://iamzachandthisismyblog.blogspot.com/2016/06/making-brain-template-priors.html">Making Brain Template Priors</a>
     <a href="https://iamzachandthisismyblog.blogspot.com/2016/06/brain-segmentation.html">Brain Segmentation</a>
     <a href="https://iamzachandthisismyblog.blogspot.com/2016/06/creating-brain-atlas.html">Create a Brain Atlas</a>
-    <a href="#">Brain Segmentation</a>
-    <a href="#">Brain Segmentation</a>        
+    <a href="#">Extract Brain Atlas Volumes</a>
+  </div>
+</div>
+
+
+<div class="dropdown">
+  <button class="dropbtn" style="background-color: rgba(0, 102, 0, 1);
+          border-radius: 30px 30px 1px 1px; width=auto;">Statistics</button>
+  <div class="dropdown-content">
+    <b href="https://iamzachandthisismyblog.blogspot.com/2016/06/beginning-r.html">Beginning R</b>
+    <b href="#">Installing ANTsR</b>
+    <b href="#">Fitting Linear Models</b>
+    <b href="#">Fitting Mixed Linear Models</b>
+    <b href="#">Fitting Predictive Models</b>
+    <b href="#">Random Field Theory in ANTsR</b>
+    <b href="#">Creating Publication Ready Figures</b>
+    <b href="#">Visualizing Cortical Thickness In a Population: Part 1</b>
+    <b href="#">Visualizing Cortical Thickness In a Population: Part 2</b>
   </div>
 </div>
 
